@@ -1,0 +1,120 @@
+/* Custom property */
+:root {
+    --global-color-1: #800000;
+    --body-border-color: #931420;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 600px;                /* Set width of body */
+    margin: 0 auto;              /* Center the body */
+    border: 3px solid var(--body-border-color);  /* Border around body */
+    background-color: #ffffff;   /* Set body background to white */
+}
+
+/* HTML background color */
+html {
+    background-color: white;
+}
+
+/* Link Styles */
+a:focus, a:hover {
+    font-style: italic;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(30deg, 
+        #f6bb73 0%, 
+        #f6bb73 30%, 
+        white 50%, 
+        #f6bb73 80%, 
+        #f6bb73 100%);           /* Gradient background */
+    border-bottom: 3px solid var(--body-border-color);  /* Border for the header */
+    padding-top: 1.5em;          /* Padding at top of the header */
+    padding-bottom: 2em;         /* Padding at bottom of the header */
+}
+
+/* Header h2 and h3 (remove indent) */
+header h2 {
+    font-size: 175%;
+    color: var(--global-color-1);
+    text-indent: 0;              /* Removed text indent */
+}
+
+header h3 {
+    font-size: 130%;
+    font-style: italic;
+    text-indent: 0;              /* Removed text indent */
+}
+
+header img {
+    float: left;
+    padding-left: 30px;
+    padding-right: 30px;         /* Padding added to header image */
+}
+
+/* Shadow class for text */
+.shadow {
+    text-shadow: 2px 2px 2px var(--global-color-1);
+}
+
+/* Main Styles */
+main {
+    clear: left;
+    padding-left: 30px;          /* Padding added to left of main */
+    padding-right: 30px;         /* Padding added to right of main */
+}
+
+main h1 {
+    font-size: 150%;
+    padding: .3em 0;
+    border-top: 3px solid var(--body-border-color);     /* Add top border to h1 */
+    border-bottom: 3px solid var(--body-border-color);  /* Add bottom border to h1 */
+}
+
+main h2 {
+    color: var(--global-color-1);
+    font-size: 130%;
+    padding: .5em 0 .25em 0;
+}
+
+main h3 {
+    font-size: 105%;
+    padding-bottom: .25em;
+}
+
+main img {
+    padding-bottom: 1em;
+}
+
+main p {
+    padding-bottom: .5em;
+}
+
+main blockquote {
+    padding: 0 2em;
+    font-style: italic;          /* Italicize blockquote */
+}
+
+main ul {
+    padding: 0 0 .25em 1.25em;
+}
+
+main li {
+    padding-bottom: .35em;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--body-border-color);  /* Footer background color */
+    color: white;                                /* Footer text color */
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    padding: 1em 0;
+}
